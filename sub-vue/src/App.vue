@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <div>
-      <p>当前处于<code>{{ isInQiankun ? 'qiankun' : '独立运行'}}</code>环境</p>
+      <p>当前处于<code>{{ isInQiankun ? 'qiankun' : '独立运行'}}</code>环境了</p>
       <p>vuex的`global module`的user state：<code> {{ JSON.stringify(user) }}</code></p>
     </div>
     <div class="btns">
