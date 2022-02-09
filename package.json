@@ -5,8 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "chalk": "^4.1.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
-    "npm-run-all": "^4.1.5"
+    "express": "^4.17.2",
+    "http-proxy-middleware": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "open": "^8.4.0"
   },
   "scripts": {
     "install": "npm-run-all --serial install:*",
@@ -23,7 +29,10 @@
     "build:sub-vue": "cd sub-vue && npm run build",
     "build:sub-html": "cd sub-html && npm run build",
     "build:main": "cd main && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:sub": "node sub-server.js",
+    "deploy:main": "node server.js",
+    "deploy": "npm-run-all --serial deploy:*"
   },
   "repository": {
     "type": "git",
