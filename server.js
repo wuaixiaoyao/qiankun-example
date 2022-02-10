@@ -55,7 +55,7 @@ app.listen(port, async () => {
   const APP_PATH = `http://localhost:${port}/`;
   console.log("app访问:", chalk.greenBright(APP_PATH));
   console.log(chalk.greenBright("开启默认浏览器..."));
-//   await open(APP_PATH, {
-//     app: { arguments: ["--incognito"] },
-//   });
+  await open(APP_PATH, {
+    app: { arguments: ["--incognito"] },
+  });
 });

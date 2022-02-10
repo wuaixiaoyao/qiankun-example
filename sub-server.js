@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require('cors')
+const cors = require("cors");
 const path = require("path");
 const { createProxyMiddleware: proxy } = require("http-proxy-middleware");
 const compression = require("compression");
@@ -12,6 +12,7 @@ const port = process.env.PORT || 8002;
 app.use(compression());
 //设置允许跨域请求
 app.use(cors())
+
 app.use(express.static(path.join(__dirname, "/dist")));
 
 const apiMaps = {

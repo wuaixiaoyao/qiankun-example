@@ -32,7 +32,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:sub": "node sub-server.js",
     "deploy:main": "node server.js",
-    "deploy": "npm-run-all --serial deploy:*"
+    "deploy": "npm-run-all --parallel deploy:*"
   },
   "repository": {
     "type": "git",
