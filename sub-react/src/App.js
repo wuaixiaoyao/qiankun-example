@@ -1,8 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    console.log("sub-react get cookie %c%s", "color: green;", document.cookie);
+    window.appName = 'sub-react'
+    console.log("sub-react get window.appName %c%s", "color: green;", window.appName);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">

@@ -52,6 +52,9 @@ export default {
       // window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__ 是qiankun注入的子应用对应的地址，谨慎使用，生产环境建议将跳转地址维护在环境变量中
       window.open(window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__)
     }
+  },
+  mounted () {
+    console.log('sub-vue get window.appName %c%s', 'color: green;', window.appName)
   }
 }
 </script>

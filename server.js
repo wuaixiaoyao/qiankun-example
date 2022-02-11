@@ -15,8 +15,8 @@ const apiMaps = {
   // dev 开发
   dev: [
     {
-      prefix: "/mock",
-      proxyTo: "http://localhost:8081/mock/",
+      prefix: "/sub-vue",
+      proxyTo: "http://localhost:8002/subapp/sub-vue",
       rewrite: "",
     },
   ],
