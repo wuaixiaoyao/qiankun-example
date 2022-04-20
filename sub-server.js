@@ -7,7 +7,7 @@ const open = require("open");
 const chalk = require("chalk");
 const app = express();
 const RUNTIME_ENV = process.env.RUNTIME_ENV || "dev";
-const port = process.env.PORT || 8002;
+const port = process.env.PORT || 8003;
 
 app.use(compression());
 //设置允许跨域请求
